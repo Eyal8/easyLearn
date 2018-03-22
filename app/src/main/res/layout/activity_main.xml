@@ -6,13 +6,110 @@
     android:layout_height="match_parent"
     tools:context="com.example.easylearn.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/lecturerButton"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/lecturer"
+    app:layout_constraintHorizontal_bias="0.514"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group4"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginEnd="68dp"
+    android:layout_marginTop="384dp"
+    android:text="@string/group_4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group6"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="92dp"
+    android:text="@string/group_6"
+    app:layout_constraintEnd_toStartOf="@+id/group7"
+    app:layout_constraintHorizontal_bias="0.534"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/group5"
+    app:layout_constraintTop_toBottomOf="@+id/group3" />
+
+  <Button
+    android:id="@+id/group2"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="48dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/group_2"
+    android:textColorLink="@color/colorPrimary"
+    app:layout_constraintBottom_toTopOf="@+id/group5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.847"
+    app:layout_editor_absoluteX="@android:dimen/app_icon_size"
+    app:layout_editor_absoluteY="@android:dimen/app_icon_size" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group5"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="48dp"
+    android:text="@string/group_5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group3"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginTop="60dp"
+    android:text="@string/group_3"
+    app:layout_constraintEnd_toStartOf="@+id/group4"
+    app:layout_constraintHorizontal_bias="0.537"
+    app:layout_constraintStart_toEndOf="@+id/group2"
+    app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group7"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginEnd="56dp"
+    android:layout_marginTop="92dp"
+    android:text="@string/group_7"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/group4" />
+
+  <Button
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:id="@+id/group1"
+    android:layout_width="267dp"
+    android:layout_height="93dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="128dp"
+    android:text="@string/group_1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.514"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lecturerButton" />
 
 </android.support.constraint.ConstraintLayout>
