@@ -6,7 +6,7 @@ EasyLearn app takes the idea of shared content like in google sheets, and expend
 
 Authors:  
   Eyal Arviv  
-  Shani Houri
-  Shachar Eliasy
-  Shachar Wild
+  Shani Houri 
+  Shachar Eliasy 
+  Shachar Wild 
   Shirel Brandes
