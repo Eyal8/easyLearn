@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">easyLearn</string>
+  <string name="app_name">easyLearn</string>
   <string name="lecturer">Lecturer</string>
   <string name="group_1">Group 1</string>
   <string name="group_5">Group 5</string>
@@ -8,4 +8,30 @@
   <string name="group_4">Group 4</string>
   <string name="group_2">Group 2</string>
   <string name="group_3">Group 3</string>
+  <string name="reset">reset</string>
+  <string name="start">start</string>
+  <string name="_00_00">00:00</string>
+  <string name="more_features">More Features</string>
+  <string name="video_android_string_fingerprint_icon_content_description">Video @android:string/fingerprint_icon_content_description</string>
+  <string name="picture_string_video_android_string_fingerprint_icon_content_description">Picture @string/video_android_string_fingerprint_icon_content_description</string>
+  <string name="colon">:</string>
+  <string name="colon2">:</string>
+  <string name="enter_minutes">Enter minutes</string>
+  <color name="gray">#E6E6FA</color>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+  <string name="capture_button">Click to capture photo</string>
+  <string name="desc">Capture image holder</string>
+  <string name="record_string">Record holder</string>
+  <string name="play">play</string>
+  <string name="stop">stop</string>
+  <string name="startrecord">startRecord</string>
+  <string name="stoprecord">stopRecord</string>
+  <string name="todo">TODO</string>
+  <string name="presentation">Presentation</string>
+  <string name="rabbit">rabbit</string>
+  <string name="textview">TextView</string>
+  <!--
+    <color name="lightblue"
+  -->
 </resources>

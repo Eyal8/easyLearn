@@ -1,18 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.easylearn.LecturerScreen">
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/time"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.easylearn.LecturerScreen"
+  android:background="@color/gray">
+
+  <TextView
+    android:id="@+id/text_view_countdown"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="92dp"
+    android:text="@string/_00_00"
+    android:textColor="@android:color/black"
+    android:textSize="60sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-    android:id="@+id/button"
-    android:layout_width="261dp"
-    android:layout_height="99dp"
-    android:layout_marginEnd="304dp"
-    android:layout_marginTop="276dp"
-    android:text="@string/lecturer"
-    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/button_start_pause"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_view_countdown"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:text="@string/start"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/button_reset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_view_countdown"
+    android:layout_toEndOf="@+id/button_start_pause"
+    android:text="@string/reset"
+    android:visibility="invisible"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
+    tools:visibility="visible" />
+
+  <EditText
+    android:id="@+id/time_count"
+    android:layout_width="132dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="348dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="@string/enter_minutes"
+    android:inputType="numberDecimal"
+    android:labelFor="@id/time_count"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button_reset"
+    app:layout_constraintVertical_bias="0.039" />
+
+  <ImageButton
+    android:id="@+id/imageButton2"
+    android:layout_width="76dp"
+    android:layout_height="63dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="176dp"
+    android:layout_marginTop="8dp"
+    android:contentDescription="@string/video_android_string_fingerprint_icon_content_description"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.986"
+    app:srcCompat="@drawable/video_player" />
+
+  <ImageButton
+    android:id="@+id/imageButton3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="216dp"
+    android:contentDescription="@string/picture_string_video_android_string_fingerprint_icon_content_description"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/imageButton2"
+    app:srcCompat="@drawable/picture" />
+
+  <ImageButton
+    android:id="@+id/imageButton4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="176dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/imageButton3"
+    app:srcCompat="@drawable/file" android:contentDescription="@string/todo" />
+
+  <ImageButton
+    android:id="@+id/imageButton5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="196dp"
+    android:layout_marginTop="572dp"
+    app:layout_constraintStart_toEndOf="@+id/imageButton4"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/speaker" android:contentDescription="@string/todo" />
+
+  <Button
+    android:id="@+id/presentation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="192dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/presentation"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/time_count" />
+
+
 </android.support.constraint.ConstraintLayout>
+
+
